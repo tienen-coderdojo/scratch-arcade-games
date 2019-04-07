@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css" media="screen">
+		html, body, body.sidebars { width:100%; height:100%; margin:0; padding:0;}
+		body {
+			overflow-y: hidden;
+		}
+	</style>
+</head>
+<body onkeydown="keyDown(event);">
+ <embed id="game" src="Bram-Tienen_suikerspel.swf"
+      quality="high"
+      type="application/x-shockwave-flash"
+      width="100%"
+      height="100%"
+			scale="exactfit"
+			autoplay="true"
+      />
+    <script>
+		window.document.getElementById("game").focus();
+		function keyDown(event) {
+		  var key = event.keyCode;
+			if (key == 27) {
+				location.href = "spel_04.html";
+			}
+		}
+    </script>
+</body>
+</html>

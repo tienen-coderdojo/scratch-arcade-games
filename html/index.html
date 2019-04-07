@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coderdojo Tienen - Scratch Arcade</title>
+</head>
+<body onkeydown="keyDown(event);">
+<h1 style="text-align:center;">Coderdojo Tienen</h1>
+<img src="CoderDojo_5.jpg"
+   style="display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width:45%;
+		  height:45%;">
+<p>Welkom op de Arcade van Coderdojo Tienen.</p>
+<p>Je kan navigeren met de joystick</p>
+<p>Omlaag ga je naar de volgende pagina, als dit spel je aanstaat kan je naar rechts gaan om het te kunnen spelen.</p>
+<p>Omhoog ga je gewoon terug naar de vorige pagina.</p>
+<p>Naar links is een korte weg terug naar hier.</p>
+
+<script>
+function keyDown(event) {
+  var key = event.keyCode;
+  switch(key) {
+    case 40: // down
+      location.href = "spel_01.html";
+      break;
+  }
+}
+</script>
+
+</body>
+</html>

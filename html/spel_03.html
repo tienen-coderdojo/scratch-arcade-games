@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoderDojo Tienen - Gust - Race tegen de tijd</title>
+</head>
+<body onkeydown="keyDown(event);">
+  <h1 style="text-align:center;">Coderdojo Tienen</h1>
+  <img src="CoderDojo_5.jpg"
+     style="display: block;
+  		  margin-left: auto;
+  		  margin-right: auto;
+  		  width:45%;
+  		  height:45%;" />
+
+  <img src="spel_03.png"
+  	   style="display: block;
+  			  margin-left: auto;
+  			  margin-right: auto;
+  			  width:45%;
+  			  height:45%;" />
+
+  <script>
+  function keyDown(event) {
+    var key = event.keyCode;
+    switch(key) {
+      case 37: // left
+        location.href = "index.html";
+        break;
+
+      case 38: // up
+        location.href = "spel_02.html";
+        break;
+
+      case 39: // right
+        location.href = "spelletje_03.html";
+        break;
+
+      case 40: // down
+        location.href = "spel_04.html";
+        break;
+
+      case 27: // esc
+        location.href = "index.html";
+        break;
+     }
+  }
+  </script>
+</body>
+</html>
