@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+        body {
+            animation-name: achtergrond;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes achtergrond {
+  0% {background-color: red;}
+  50% {background-color: yellow;}
+100% {background-color: red;}
+}
+</style>
+			
+</head>
+<body onkeydown="uniKeyCode(event)" >
+    <img src="coderdojo-1.png"style="display: block;
+  			  margin-left: auto;
+  			  margin-right: auto;
+  			  width:45%;
+  			  height:45%;" />
+    
+<div >
+    <p style="text-align: center"> Dit is het einde. <br> Maak plaats voor de volgende en ga even buiten spelen.</p>
+    </div>
+<script>
+		window.document.getElementById("game").focus();
+		function uniKeyCode(event) {
+		  var key = event.keyCode;
+             switch(key) {
+        case 37: // left
+              location.href = "index.html";
+              
+        break;
+
+         case 38: // up
+              location.href = "spel_03.html";
+              break;
+        case 40: // down
+              location.href = "index.html";
+             nothing();
+         break;
+              
+        case 27: // esc
+              location.href = "index.html";
+              
+        break;
+
+         default: return; 
+     }
+     }
+    </script>
+</body>
+</html>
